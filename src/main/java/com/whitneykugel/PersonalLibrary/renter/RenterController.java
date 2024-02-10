@@ -2,6 +2,8 @@ package com.whitneykugel.PersonalLibrary.renter;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +19,10 @@ public class RenterController {
 	@GetMapping
 	public List<Renter> getRenter() {
 		return renterService.getRenter();
+	}
+
+	@PostMapping
+	public void addRenter(@RequestBody Renter renter) {
+		renterService.addRenter(renter);
 	}
 }

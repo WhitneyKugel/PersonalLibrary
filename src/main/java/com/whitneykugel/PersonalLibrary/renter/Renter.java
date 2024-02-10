@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -14,6 +15,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 @Getter
 @Setter
@@ -41,4 +43,10 @@ public class Renter {
 	private String email;
 	private LocalDate dob;
 
+	@Transient
+	private Integer age;
+
+	public Integer getAge() {
+		return Period.between(this.dob, LocalDate.now()).getYears();
+	}
 }
