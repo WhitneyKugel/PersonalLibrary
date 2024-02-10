@@ -46,6 +46,10 @@ public class Renter {
 	@Transient
 	private Integer age;
 
+	public String  getFullName() {
+		return this.firstName + this.lastName;
+	}
+
 	public Integer getAge() {
 		return Period.between(this.dob, LocalDate.now()).getYears();
 	}
