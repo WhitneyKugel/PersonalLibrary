@@ -27,4 +27,11 @@ public class RenterService {
 		renterRepository.save(renter);
 
 	}
+
+	public void deleteRenter(Long renterId) {
+		if (!renterRepository.existsById(renterId)) {
+			throw new IllegalStateException("renter with id " + renterId + " does not exist");
+		}
+		renterRepository.deleteById(renterId);
+	}
 }
