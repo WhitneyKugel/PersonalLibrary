@@ -31,30 +31,30 @@ public class RenterService {
 
 	}
 
-	public void deleteRenter(Long renterId) {
-		if (!renterRepository.existsById(renterId)) {
-			throw new IllegalStateException("renter with id " + renterId + " does not exist");
+	public void deleteRenter(String email) {
+		if (!renterRepository.existsById(email)) {
+			throw new IllegalStateException("renter with email " + email + " does not exist");
 		}
-		renterRepository.deleteById(renterId);
+		renterRepository.deleteById(email);
 	}
 
 	@Transactional
-	public void updateRenter(Long renterId, String lastName, String email) {
+	public void updateRenter(String currentEmail, String lastName, String newEmail) {
 
-		Renter renter = renterRepository.findById(renterId)
-				.orElseThrow(() -> new IllegalStateException("renter with id " + renterId + " does not exist"));
+		Renter renter = renterRepository.findById(currentEmail)
+				.orElseThrow(() -> new IllegalStateException("renter with id " + currentEmail + " does not exist"));
 
 		if (lastName != null && !lastName.isEmpty() && !lastName.equals(renter.getFirstName())) {
 			renter.setFirstName(lastName);
 		}
 
-		if (email != null && !email.isEmpty() && !email.equals(renter.getEmail())) {
+		if (newEmail != null && !newEmail.isEmpty() && !newEmail.equals(renter.getEmail())) {
 
-			Optional<Renter> renterOptional = renterRepository.findRenterByEmail(email);
+			Optional<Renter> renterOptional = renterRepository.findRenterByEmail(newEmail);
 			if (renterOptional.isPresent()) {
 				throw new IllegalStateException("email taken");
 			}
-			renter.setEmail(email);
+			renter.setEmail(newEmail);
 		}
 
 		renterRepository.save(renter);

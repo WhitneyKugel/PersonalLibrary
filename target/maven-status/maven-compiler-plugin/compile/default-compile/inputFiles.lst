@@ -1,6 +1,7 @@
-/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/renter/RenterController.java
-/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/renter/RenterService.java
-/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/renter/Renter.java
+/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/service/RenterService.java
+/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/data/doa/RenterRepository.java
 /Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/PersonalLibraryApplication.java
-/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/renter/RenterConfig.java
-/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/renter/RenterRepository.java
+/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/data/entity/Renter.java
+/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/presentation/dto/RenterDto.java
+/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/presentation/controller/RenterController.java
+/Users/whitneykugel/WhitneyKugel.com/Projects/PersonalLibrary/src/main/java/com/whitneykugel/PersonalLibrary/presentation/mapper/RenterMapper.java

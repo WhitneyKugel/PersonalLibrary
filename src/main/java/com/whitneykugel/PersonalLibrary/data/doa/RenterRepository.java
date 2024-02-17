@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface RenterRepository extends JpaRepository<Renter, Long> {
+public interface RenterRepository extends JpaRepository<Renter, String> {
 
 	Optional<Renter> findRenterByEmail(String email);
 

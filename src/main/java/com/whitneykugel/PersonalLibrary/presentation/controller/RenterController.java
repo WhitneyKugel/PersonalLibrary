@@ -33,15 +33,15 @@ public class RenterController {
 	}
 
 	@PutMapping(path = "{renterId}")
-	public void updateRenter(@PathVariable("renterId") Long renterId,
+	public void updateRenter(@PathVariable("renterId") String currentEmail,
 	                         @RequestParam(required = false) String lastName,
 	                         @RequestParam(required = false) String email) {
-		renterService.updateRenter(renterId, lastName, email);
+		renterService.updateRenter(currentEmail, lastName, email);
 	}
 
-	@DeleteMapping(path = "{renterId}")
-	public void deleteRenter(@PathVariable("renterId") Long renterId) {
-		renterService.deleteRenter(renterId);
+	@DeleteMapping(path = "{currentEmail}")
+	public void deleteRenter(@PathVariable("currentEmail") String currentEmail) {
+		renterService.deleteRenter(currentEmail);
 	}
 
 
