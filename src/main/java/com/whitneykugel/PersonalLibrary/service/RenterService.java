@@ -1,5 +1,7 @@
-package com.whitneykugel.PersonalLibrary.renter;
+package com.whitneykugel.PersonalLibrary.service;
 
+import com.whitneykugel.PersonalLibrary.data.doa.RenterRepository;
+import com.whitneykugel.PersonalLibrary.data.entity.Renter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package com.whitneykugel.PersonalLibrary.renter;
+package com.whitneykugel.PersonalLibrary.data.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

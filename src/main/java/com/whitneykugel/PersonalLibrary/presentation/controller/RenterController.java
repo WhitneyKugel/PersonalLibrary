@@ -1,5 +1,7 @@
-package com.whitneykugel.PersonalLibrary.renter;
+package com.whitneykugel.PersonalLibrary.presentation.controller;
 
+import com.whitneykugel.PersonalLibrary.data.entity.Renter;
+import com.whitneykugel.PersonalLibrary.service.RenterService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

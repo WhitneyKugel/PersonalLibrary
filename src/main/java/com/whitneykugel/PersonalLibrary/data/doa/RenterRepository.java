@@ -1,5 +1,6 @@
-package com.whitneykugel.PersonalLibrary.renter;
+package com.whitneykugel.PersonalLibrary.data.doa;
 
+import com.whitneykugel.PersonalLibrary.data.entity.Renter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
