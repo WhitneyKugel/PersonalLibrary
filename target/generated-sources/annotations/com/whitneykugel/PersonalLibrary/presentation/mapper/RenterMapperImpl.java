@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-02-17T14:07:02-0600",
+    date = "2024-02-17T14:14:40-0600",
     comments = "version: 1.5.1.Final, compiler: javac, environment: Java 17.0.4.1 (Oracle Corporation)"
 )
 public class RenterMapperImpl implements RenterMapper {

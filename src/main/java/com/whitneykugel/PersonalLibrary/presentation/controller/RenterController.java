@@ -1,6 +1,8 @@
 package com.whitneykugel.PersonalLibrary.presentation.controller;
 
 import com.whitneykugel.PersonalLibrary.data.entity.Renter;
+import com.whitneykugel.PersonalLibrary.presentation.dto.RenterDto;
+import com.whitneykugel.PersonalLibrary.presentation.mapper.RenterMapper;
 import com.whitneykugel.PersonalLibrary.service.RenterService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,10 +23,15 @@ import java.util.List;
 public class RenterController {
 
 	private final RenterService renterService;
+	private final RenterMapper renterMapper;
 
 	@GetMapping
-	public List<Renter> getRenter() {
-		return renterService.getRenter();
+	public List<RenterDto> getRenter() {
+
+		List<Renter> renterList = renterService.getAllRenters();
+		List<RenterDto> renterDtoList = renterMapper.toRenterDtoList(renterList);
+
+		return renterDtoList;
 	}
 
 	@PostMapping
