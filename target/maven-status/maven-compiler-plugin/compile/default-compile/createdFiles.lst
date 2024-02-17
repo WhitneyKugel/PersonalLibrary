@@ -5,5 +5,6 @@ com/whitneykugel/PersonalLibrary/PersonalLibraryApplication.class
 com/whitneykugel/PersonalLibrary/data/doa/RenterRepository.class
 com/whitneykugel/PersonalLibrary/data/entity/Renter.class
 com/whitneykugel/PersonalLibrary/presentation/dto/RenterDto$RenterDtoBuilder.class
+com/whitneykugel/PersonalLibrary/presentation/mapper/RenterMapperImpl.class
 com/whitneykugel/PersonalLibrary/presentation/dto/RenterDto.class
 com/whitneykugel/PersonalLibrary/presentation/controller/RenterController.class
